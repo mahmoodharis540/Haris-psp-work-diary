@@ -1,7 +1,22 @@
-# Professional Software Projects GitHub Diary Guidance
+# Profile: Joe Bloggs
 
-This repo contains
+### Team: NHS Pathfinder
 
-- a [guide](guide.md) to using GitHub for diary submissions.
-- a [sample readme.md](sample-readme.md) file page to create.
-- suggested [weekly themes](weekly-themes.md) and structure for your diary.
+### Weekly Session: Thursday 11:00
+
+### Team Members
+- *Haris Mahmood*
+- Sam Clark
+- Jack 
+- Sam T
+
+
+**_Alternatively in a table_**
+
+
+|  |  |
+| ------------ | ------------- |
+| Name | Haris Mahmood  |
+| Team | NHS Pathfinder Team 2 |
+| Session | Thursday 11:00 |
+| Team | Sam Clark, Jack, Sam T |
