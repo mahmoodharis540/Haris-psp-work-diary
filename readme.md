@@ -11,9 +11,6 @@
 - Sam T
 
 
-**_Alternatively in a table_**
-
-
 |  |  |
 | ------------ | ------------- |
 | Name | Haris Mahmood  |
