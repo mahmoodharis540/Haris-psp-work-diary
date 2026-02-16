@@ -1,3 +1,3 @@
 # Tips for this week
 
-Consider all the software, hardware and other preparations needed for a successful sprint.
+Added accessibility features to the code. Added a way to use different langauges - one where the languages are local so if wifi drops out in the Northern General they can still have access to those languages. I chose the most common languages in the uk which are Polish, English and Hindi. And an option for them to choose other languages using google translate api. Also added a way to screen read the page and increase and decrease the text size of the page. Created a Staff portal and settings page too. Coded by myself to show the group and the lectures so they can all have somewhere to start like a template for features as the sprint week starts.  
