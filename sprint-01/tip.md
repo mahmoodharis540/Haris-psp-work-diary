@@ -1,3 +1,6 @@
+# Tips for this week
+
+
 Setup everyones environment 
 Scrum mastered from the group
 Allocated roles 
