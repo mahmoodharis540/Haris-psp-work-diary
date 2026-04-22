@@ -1,9 +1,9 @@
 # Tips for this week
 
-Comment on the personality type identified in the questionnaire.  Discuss the role you hope to play in the team.
+This week was focused on forming the team and establishing the direction early. One of the first activities set by the Martin was to complete a personality questionaire. My result came back as "Dynamo and Facilitator". I felt this matched my role as I took within the group because from the start I was keen to organise the team group communication via whatsapp and discord, and keep people involved. 
 
-Did the personality questionaire and got: Dynamo and facilitator. 
+The main practical contribution this week was creating the inital paper wireframes for the application. I used these to give the team a clear visual idea of how the NHS pathfinder app could work in practice rather than keep the discussion abstract. This helped us move from a general idea to something we could actually discuss, critique and improve. Before presenting the wireframes to Martin, I checked tat the group were comfortable with the direction and that the screens reflected what we wanted the application to do. This was useful because it meant the design was not just my own, but something the group had already started to agree on collectively. 
 
-Created the wireframes in lesson and confirmed that the group felt comfortable with it before showing Martin. 
+I also helped with the early allocation of team roles. Because I had already taken responsibility for organising discussion and pushing the design work forward, I took on a leadership role within the group. I saw this as important because at the start of a project, confusion over responsibilities can slow down progress very quickly. By helping to assign roles early, we were able to create more structure and give each team member a clearer starting point.
 
-Assigned roles in the group me as group leader - the group wanted me as it. Sam as front end and design. Jack as Scrum master.
+This week overall was important because it laid the foundation for the rest of the project. The wireframes gave us early design direction. The discussions with Martin helped validate that direction and role allocation made the team more organised. Looking back, this week showed me that strong early planning and communication were essential if we wanted to develop the project efficiently and professionally.
