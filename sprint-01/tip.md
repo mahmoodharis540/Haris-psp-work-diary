@@ -1,9 +1,15 @@
 # Tips for this week
 
-This week was focused on forming the team and establishing the direction early. One of the first activities set by the Martin was to complete a personality questionaire. My result came back as "Dynamo and Facilitator". I felt this matched my role as I took within the group because from the start I was keen to organise the team group communication via whatsapp and discord, and keep people involved. 
-
-The main practical contribution this week was creating the inital paper wireframes for the application. I used these to give the team a clear visual idea of how the NHS pathfinder app could work in practice rather than keep the discussion abstract. This helped us move from a general idea to something we could actually discuss, critique and improve. Before presenting the wireframes to Martin, I checked tat the group were comfortable with the direction and that the screens reflected what we wanted the application to do. This was useful because it meant the design was not just my own, but something the group had already started to agree on collectively. 
-
-I also helped with the early allocation of team roles. Because I had already taken responsibility for organising discussion and pushing the design work forward, I took on a leadership role within the group. I saw this as important because at the start of a project, confusion over responsibilities can slow down progress very quickly. By helping to assign roles early, we were able to create more structure and give each team member a clearer starting point.
-
-This week overall was important because it laid the foundation for the rest of the project. The wireframes gave us early design direction. The discussions with Martin helped validate that direction and role allocation made the team more organised. Looking back, this week showed me that strong early planning and communication were essential if we wanted to develop the project efficiently and professionally.
+Held stand up 
+Told Philipe to look up ways to connect backend mysql to nextjs frontend me and sam have been working on 
+Fixed connecting pages together 
+Created a settings page 
+Fixed the globalcss so that nhs blue us everywhere 
+Added accessibility features to settings page and made them a global layout across pages. 
+Fixed sams prisma 
+Setup action plan for sprint 2 where we build the navigation for the users
+Merged everyones branches and fixed conflicts
+Asked peter and other lecturers about my ideas and verified it was the best approach and guided the group on what to do when we start the next sprint – created the vision and a paper wireframe from the nagivation got sam to translate to figma
+Guided filipe to use prisma taught him how to do parts of it 
+Fixed the admin page so jacks login dummy page works with mine and sams pages and merged it all to the dev branch so we can all pull from the dev start out new tasks
+Assigned new tasks in a new scrum for the rest of the lesson 
