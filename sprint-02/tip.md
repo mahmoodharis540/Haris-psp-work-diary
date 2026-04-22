@@ -1,92 +1,14 @@
 # Tips for the Sprint Week
-Monday 23rd march 
 
-Deployment works 
+Sprint Two was the most important stage of the project because it was the point where the application had to move from a developing prototype into something much closer to a finished and client-ready product. During this sprint, my role combined technical development, team coordination, and quality improvement. I helped manage progress through stand-ups, assigned tasks, reviewed the code completed by the team, and merged branches so that different parts of the project came together in a more stable and organised way. This was especially important in the final sprint because the project had become more complex, and without active coordination it would have been easy for the team’s work to become disconnected.
+A major part of my contribution during Sprint Two was refining the accessibility features so they worked in a more polished and realistic way across the full application. I refactored the accessibility controls from a permanent floating dock into a popup opened from a single floating accessibility icon, made the popup automatically collapse after five seconds, changed the icon to a standing person symbol, and made the popup responsive so it scaled better on both desktop and mobile. I also improved the controls themselves by making A+ and A- update the same saved text-size setting used in the Settings page, adding a working screen-reader/read-aloud helper, introducing a dyslexia-friendly font mode, visible link highlighting, reduced-motion and high-contrast toggles, and making the accessibility icon global so it appeared consistently across every page. I also changed the screen reader from a one-off action into a persistent on/off mode that continued across page navigation until disabled. These changes were important because they made accessibility feel like a fully integrated part of the application rather than an isolated extra feature.
 
-Let everyone branch off it 
+I also made several important changes to the directions page. I added a per-step read-aloud button so the current instruction text could be spoken aloud, which made the route guidance more useful for users who may struggle with reading or who would benefit from spoken support. I removed the slide counter from the directions page header and re-centred the route title to create a cleaner and less cluttered layout. I also added translations for the read-step button and other directions-page interface labels, and translated more of the directions page UI so that app-owned text followed the selected language properly. These changes improved both usability and consistency, especially for users relying on accessibility features or translated content.
+Another significant area I worked on was the QR code and email route-sharing functionality. I extended the homepage QR/prefill flow so that a single URL could prefill both the “Where are you” field and the “Where is your appointment” field. To support this, I added support for entranceId and destinationId with name fallback where needed, created a new destination lookup API route, made the destination field controlled so the second prefilled value appeared correctly in the interface, and added different status messages depending on whether the URL contained only an entrance, only a destination, or both. I then expanded this further in the admin Graph Editor page by adding a dedicated Patient Route QR section. This admin feature could generate a full patient route URL, generate a QR code for that URL, preview and download the QR code, and create a prefilled patient email draft containing the route link. I also added an option to copy the email, include the recipient name, and appointment time so staff had a more flexible way to send route information. I considered this one of the strongest features added during the sprint because it made the system much more practical for real use in a hospital setting. 
 
-Held standup assigned tasks 
+One of the most valuable improvements I made during Sprint Two was adding offline support for routes. I introduced offline route support so that previously loaded route data and media could continue to work if the Wi-Fi dropped. To make this possible, I added a service worker and registration flow, cached route lookup data, path sequence data, and uploaded route media, and added an offline banner on the directions page. I designed the flow so that if a route had been loaded once while online, it could still be followed after connectivity was lost. This was particularly relevant to the NHS Pathfinder project because hospital Wi-Fi cannot always be relied on, so resilience was just as important as the routing logic itself.
+The hardest technical issue I had to deal with during this sprint was fixing the development caching and service-worker issues that were causing stale localhost behaviour and hydration mismatches. This was difficult because it affected the reliability of development and made it harder to tell whether the latest changes were actually being reflected properly in the application. Solving that issue was important not only for my own work, but also for making the project more stable as a whole as we prepared for final integration and demonstration.
+Alongside the coding work, I also personally helped prepare for the final demo by holding stand-ups, reviewing and merging code, checking that the BFS-related work functioned alongside the code and language features already built, assigning new tasks when priorities changed, pruning branches once work had been merged, and preparing demonstration notes for the next client meeting. This preparation mattered because by the final sprint, success was not only about adding more features, but about making sure the application was stable, presentable, and clearly demonstrated to the client and lecturers.
 
-Reviewed the code everyone did and merged branches 
-
-
-24th March 
-
-Held standup 
-Build the node modules pages 
-Consulted on the BFS algorithm 
-Helped fix some coding issues for sam
-Change pathfinding to be able to select existing nodes and to reflect database changes.
-Reviewed the code everyone did and merged branches 
-
-
-
-25th March 
-Held standup – suggested we tick off “Tick off User stories” I made in first sprint so we can see what user stories are completed and what needs to be done 
-
-Reviewed the code everyone did and merged branches 
-
-Checked the BFS algorithm works with the code I made, and Sams languages work merged with the work we did
-
-Assigned new tasks: 
-Felipe and Jack merging BFS branches
-And me and start working on new user stories.
-
-Prepped demonstration and notes for the next client meeting 
-
-
-Thursday 26
-
-Prune branches – everyones work is in
-Find additional tasks 
-•	Refactored the accessibility controls from a permanent floating dock into a popup opened from a single floating accessibility icon.
-•	Made the popup auto-collapse after 5 seconds.
-•	Changed the accessibility trigger icon to a standing person icon.
-•	Made the accessibility popup responsive so it scales better across desktop and mobile.
-•	Improved accessibility controls:
-•	A+ and A- now update the same stored text-size setting used in Settings.
-•	added a working screen-reader/read-aloud helper.
-•	added dyslexia-friendly font mode.
-•	added visible link highlighting.
-•	added reduced-motion and high-contrast toggles.
-•	Added a per-step read-aloud button on the directions page so the current instruction text can be spoken.
-•	Moved the floating accessibility icon to be global so it appears on every page in the bottom-right.
-•	Changed the screen reader from a one-off action into a persistent enabled/disabled mode that continues across page navigation until turned off.
-•	Made the floating theme/settings/accessibility controls more mobile-friendly so they take less space on small screens.
-•	Removed the slide counter from the directions page header and re-centered the route title.
-full-path-url
-•	Extended the homepage QR/prefill flow so a single URL can fill both:
-•	Where are you:
-•	Where is your appointment:
-•	Added support for:
-•	entranceId
-•	destinationId
-•	with name fallback where needed.
-•	Added a new destination lookup API route:
-•	/api/destinations/[id]
-•	Made the destination field controlled so the second prefilled value actually appears in the UI.
-•	Added new status messages for:
-•	entrance only
-•	destination only
-•	both entrance and destination.
-•	Added a new Patient Route QR section to the admin Graph Editor page.
-•	That admin section can now:
-•	generate a full patient route URL
-•	generate a QR code for that URL
-•	preview/download the QR code
-•	create a prefilled patient email draft with the route link.
-•	Fixed dev caching/service-worker issues that were causing stale localhost behavior and hydration mismatches.
-•	Added directions-page translations for the read-step button and other directions UI labels.
-•	Translated more of the directions page UI so app-owned text follows the selected language.
-offline-routes
-•	Added offline route support so previously loaded route data and media can continue working when Wi Fi drops.
-•	Added a service worker and registration flow.
-•	Cached:
-•	route lookup data
-•	path sequence data
-•	uploaded route media.
-•	Added an offline banner on the directions page.
-•	Designed the flow so if a route is loaded once while online, it can still be followed after connectivity drops.
-•	This branch focused on resilience for unreliable hospital Wi Fi rather than new routing logic.
-•	added copy email, add recipient name and appointment time and so you can copy and paste email as an option
+Overall, Sprint Two was where I made some of my strongest contributions to the project. I helped coordinate the team, improved accessibility in a much more complete way, strengthened the directions experience, built practical QR and email-sharing functionality, added offline route support for unreliable hospital Wi-Fi, and solved difficult technical issues that were affecting stability. Looking back, this sprint showed me that delivering strong software in a professional setting is not just about adding features, but about making the whole system reliable, accessible, and ready to be used confidently in a real-world context.
 
